@@ -37,6 +37,10 @@ info "Init project"
 info "Apply migrations"
 ./yii migrate <<< "yes"
 
+info "GRANT ALL PRIVILEGES to %"
+mysql -uroot <<< "GRANT ALL PRIVILEGES ON culture_db.* TO 'root'@'%' WITH GRANT OPTION;"
+echo "Set mysql done!"
+
 info "Create bash-alias 'app' for vagrant user"
 echo 'alias app="cd /app"' | tee /home/vagrant/.bash_aliases
 
