@@ -1,0 +1,102 @@
+
+@media only screen and (min-width: 768px) {
+
+    
+    #main-menu.navbar-default {
+        background: rgba(255, 255, 255, 0.9);
+        -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+    }
+    #main-menu.navbar-default .navbar-nav > li > a {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    #main-menu.navbar-default .navbar-nav > li.active > a,
+    #main-menu.navbar-default .navbar-nav > li.open > a,
+    #main-menu.navbar-default .navbar-nav > li:hover > a {
+        background: transparent;
+        padding-top: 37px;
+        border-top: 3px solid #1BC1AE;
+    }
+    #main-menu.navbar-default .dropdown-menu {
+        padding: 0 20px;
+        min-width: 220px;
+        background-color: rgba(26, 28, 40, 0.9);
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        background-clip: inherit;
+    }
+    #main-menu.navbar-default .dropdown-menu > li {
+        border-left: 3px solid transparent;
+        margin-left: -20px;
+        padding-left: 17px;
+        -webit-transition: border-color 400ms;
+        transition: border-color 400ms;
+    }
+    #main-menu.navbar-default .dropdown-menu > li > a {
+        border-top: 1px solid #404455;
+        padding: 15px 0;
+        color: #eeeeee;
+    }
+    #main-menu.navbar-default .dropdown-menu > li:first-child > a {
+        border-top: 0;
+    }
+    #main-menu.navbar-default .dropdown-menu > li.active,
+    #main-menu.navbar-default .dropdown-menu > li.open,
+    #main-menu.navbar-default .dropdown-menu > li:hover {
+        border-left-color: #1BC1AE;
+    }
+    #main-menu.navbar-default .dropdown-menu > li.active > a,
+    #main-menu.navbar-default .dropdown-menu > li.open > a,
+    #main-menu.navbar-default .dropdown-menu > li:hover > a {
+        color: #1BC1AE;
+        background-color: transparent;
+    }
+    
+    #footer .social-icons {
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1100px) {
+    /* For mobile phones: */
+    .navbar-brand{
+        overflow: hidden;
+        width: 350px;
+    }    
+}
+
+@media only screen and (max-width: 1099px) and (min-width: 992px) {
+    /* For mobile phones: */
+    .navbar-brand{
+        overflow: hidden;
+        width: 300px;
+    }    
+}
+
+@media only screen and (max-width: 991px)  and (min-width: 769px) {
+    /* For mobile phones: */
+    .navbar-brand{
+        overflow: hidden;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    /* For mobile phones: */
+    .navbar-brand .logo{
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 365px){
+    /* For mobile phones: */
+    .navbar-brand .logo{
+        height: 30px;
+    }
+}
+
+
+

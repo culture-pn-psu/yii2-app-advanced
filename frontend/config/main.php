@@ -11,9 +11,12 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
+    'homeUrl' => '/',
+    'modules' => require __DIR__ . '/modules.php',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
+            'baseUrl' => '',
         ],
         'user' => [
             'identityClass' => 'common\models\User',
@@ -41,7 +44,7 @@ return [
             'showScriptName' => false,
             'rules' => [
             ],
-        ],        
+        ],
     ],
     'params' => $params,
 ];

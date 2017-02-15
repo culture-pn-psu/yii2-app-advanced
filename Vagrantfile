@@ -54,6 +54,8 @@ Vagrant.configure(2) do |config|
   # disable folder '/vagrant' (guest machine)
   config.vm.synced_folder '.', '/vagrant', disabled: true
 
+  #config.vm.synced_folder "./vagrant/backup", "/var/lib/mysql/culture_db", disabled: false
+
   # hosts settings (host machine)
   config.vm.provision :hostmanager
   config.hostmanager.enabled            = true
@@ -66,6 +68,13 @@ Vagrant.configure(2) do |config|
   config.vm.provision 'shell', path: './vagrant/provision/once-as-root.sh', args: [options['timezone']]
   config.vm.provision 'shell', path: './vagrant/provision/once-as-vagrant.sh', args: [options['github_token']], privileged: false
   config.vm.provision 'shell', path: './vagrant/provision/always-as-root.sh', run: 'always'
+
+  # triggers
+  #config.trigger.before :halt do
+    #info "Dumping the database before shutting down..."
+    #run_remote  "bash /vagrant/assets/exportdb.sh"
+    #run_remote  "bash ./vagrant/assets/gz-wpcontent.sh"
+  #end
 
   # post-install message (vagrant console)
   config.vm.post_up_message = "Frontend URL: http://#{domains[:frontend]}\nBackend URL: http://#{domains[:backend]}"

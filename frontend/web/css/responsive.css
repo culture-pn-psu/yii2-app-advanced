@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px) {
+    #main-menu.navbar-default.on .navbar-nav > li > a {
+        padding:20px 10px 20px;
+    }
+    #main-menu.navbar-default.on .navbar-nav > li > a:hover, 
+    #main-menu.navbar-default.on .navbar-nav > li > a[aria-expanded="true"]{
+        padding:17px 10px 20px;
+    }
+    #main-menu.navbar-default.on .navbar-brand {
+        padding:5px 10px;
+    }
+    
+    #main-slider .item {
+        //height: 401px !important;
+    }
+}

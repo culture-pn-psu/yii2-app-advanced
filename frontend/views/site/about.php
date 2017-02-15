@@ -1,10 +1,9 @@
 <?php
+use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 
-use yii\helpers\Html;
-
-$this->title = 'About';
+$this->title = Yii::t('app', 'About');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
