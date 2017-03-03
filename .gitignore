@@ -13,12 +13,16 @@ nbproject
 .buildpath
 .project
 .settings
+.c9
 
 # windows thumbnail cache
 Thumbs.db
 
 # composer vendor dir
 /vendor
+
+/frontend/runtime
+/backend/runtime
 
 # composer itself is not needed
 composer.phar
