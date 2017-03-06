@@ -5,7 +5,8 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-
+//echo Yii::$app->controller->action->id;
+//exit();
 if (Yii::$app->controller->action->id === 'login') {
     /**
      * Do not use this code in your template. Remove it. 
@@ -25,12 +26,6 @@ if (Yii::$app->controller->action->id === 'login') {
     dmstr\web\AdminLteAsset::register($this);
 
     $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
-    /**
-     * เช็ค homePage
-     */
-    $controller = Yii::$app->controller;
-    $default_controller = Yii::$app->defaultRoute;
-    $collapse = (($controller->id === $default_controller) && ($controller->action->id === $controller->defaultAction)) ? '' : 'sidebar-collapse';
     ?>
     <?php $this->beginPage() ?>
     <!DOCTYPE html>
@@ -42,33 +37,8 @@ if (Yii::$app->controller->action->id === 'login') {
             <title><?= Html::encode($this->title) ?></title>
             <?php $this->head() ?>
         </head>
-        <body class="<?= \dmstr\helpers\AdminLteHelper::skinClass() ?> hold-transition sidebar-mini fixed <?= $collapse ?>">
-            <?php $this->beginBody() ?>
-            <div class="wrapper">
-
-                <?=
-                $this->render(
-                        'header.php', [
-                    'directoryAsset' => $directoryAsset,
-                    'asset' => $asset
-                        ]
-                )
-                ?>
-
-                <?=
-                $this->render(
-                        'left.php', ['directoryAsset' => $directoryAsset]
-                )
-                ?>
-
-                <?=
-                $this->render(
-                        'content.php', ['content' => $content, 'directoryAsset' => $directoryAsset]
-                )
-                ?>
-
-            </div>
-
+        <body >
+            <?php echo $content?>
             <?php $this->endBody() ?>
         </body>
     </html>

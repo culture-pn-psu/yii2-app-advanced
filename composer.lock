@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebfb2ee00ad3039547beb39231ad93ac",
+    "content-hash": "09eccb9bd44c8f51aba1ceaf175ae875",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -495,6 +495,36 @@
                 "yii"
             ],
             "time": "2017-02-28 16:15:10"
+        },
+        {
+            "name": "bower-asset/adminbsb-materialdesign",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gurayyarar/AdminBSBMaterialDesign.git",
+                "reference": "d85e441225d0d79498993680d7aa0592d68b03d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gurayyarar/AdminBSBMaterialDesign/zipball/d85e441225d0d79498993680d7aa0592d68b03d5",
+                "reference": "d85e441225d0d79498993680d7aa0592d68b03d5",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "js/admin.js",
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "bower_components",
+                    "test",
+                    "tests"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "AdminBSB - Free admin panel that is based on Bootstrap 3.x with Material Design"
         },
         {
             "name": "bower-asset/blueimp-gallery",
@@ -1661,6 +1691,44 @@
             "time": "2016-12-29 02:35:36"
         },
         {
+            "name": "culture-pn-psu/yii2-learning-center",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/culture-pn-psu/yii2-learning-center.git",
+                "reference": "3b69b60dfaf1bf19f434f90c4de42679c98ea30b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/culture-pn-psu/yii2-learning-center/zipball/3b69b60dfaf1bf19f434f90c4de42679c98ea30b",
+                "reference": "3b69b60dfaf1bf19f434f90c4de42679c98ea30b",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "culturePnPsu\\learningCenter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Culture Service",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Activity management system for Yii2",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-03-06 16:20:49"
+        },
+        {
             "name": "culture-pn-psu/yii2-magazine",
             "version": "dev-master",
             "source": {
@@ -2434,6 +2502,51 @@
                 "icon"
             ],
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "ics042/yii2-admin-bsb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ics042/yii2-admin-bsb.git",
+                "reference": "d6073d2f482243a86736445a8e4632adc5fea77a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ics042/yii2-admin-bsb/zipball/d6073d2f482243a86736445a8e4632adc5fea77a",
+                "reference": "d6073d2f482243a86736445a8e4632adc5fea77a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/adminbsb-materialdesign": "1.0.4",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "ics042\\AdminBsb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ben Yang",
+                    "email": "tsun424@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 Integration for AdminBSB theme",
+            "homepage": "http://github.com/ics042/yii2-admin-bsb",
+            "keywords": [
+                "AdminBSB",
+                "theme",
+                "yii2"
+            ],
+            "time": "2016-12-19 11:02:26"
         },
         {
             "name": "imagine/imagine",
@@ -8385,7 +8498,9 @@
         "culture-pn-psu/yii2-project": 20,
         "culture-pn-psu/yii2-cms": 20,
         "culture-pn-psu/yii2-digitalmuseum": 20,
-        "mdmsoft/yii2-admin": 20
+        "mdmsoft/yii2-admin": 20,
+        "ics042/yii2-admin-bsb": 20,
+        "culture-pn-psu/yii2-learning-center": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
