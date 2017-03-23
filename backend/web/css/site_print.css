@@ -1,0 +1,63 @@
+@import url("../fonts/TH_Sarabun/thsarabunnew.css");
+
+
+/************ Print ***************************/
+
+@page {
+    size: A4;
+    margin: 0;
+    padding: 0;
+    orphans:4; 
+    widows:2;
+}
+@page :left {
+    margin-left: -2cm;
+}
+@page :right {
+    margin-left: -1cm;
+}
+script, style { 
+    display:none; 
+}
+
+@media print {    
+    *{ margin: 0; padding: 0;}
+    body{ 
+        font-family: 'THSarabunNew', sans-serif !important; 
+        font-size: 11pt; 
+        line-height: 12pt; 
+        background: #e1e1e1; 
+    }
+    h1,h2,h3,h4,h5{ 
+        line-height: 1.5em;
+        clear: both;
+        font-family: 'THSarabunNew', sans-serif !important;
+    }
+    
+    p{ padding: 0 0 10px 0;line-height: 30px;  font-size: 11pt; }
+    .n{ font-weight: normal; font-style: normal; }
+    .b{ font-weight: bold; font-style: normal; }
+    .i{ font-weight: normal; font-style: italic; }
+    .bi{ font-weight: bold; font-style: italic; }
+    ul,ol{padding: 0 0 10px 0;}
+    li{ margin: 0 0 0 2em; padding: 0 0 5px 0; }
+    code{ background: #FFF; }
+    #container{ width: 900px; margin: 20px auto 0; border: 1px solid #333; padding: 20px; background: #FFF; }
+    #instruction{ padding: 10px 10px 0; background: #e6e6e6; }
+    #footer{ width: 940px; margin: 0 auto; padding: 10px 0 20px; }
+    .right{text-align: right;}
+    .type{ font-family: 'THSarabunNew', sans-serif; height: 5em; width: 98%;font-size: 1em;clear: both;margin: 20px auto 10px;padding: 5px 1%; }
+    .box{
+        border: none !important;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    th{
+        white-space: nowrap;
+        page-break-inside: avoid;
+    }
+    th,td{
+        padding: 1px;
+    }
+}

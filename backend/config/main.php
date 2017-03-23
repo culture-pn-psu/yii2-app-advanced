@@ -50,6 +50,29 @@ return [
          'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
+        ############################
+        // 'view' => [
+        //     'theme' => [
+        //         'pathMap' => ['@backend/views' => '@backend/themes/adminlte/views'],
+        //         'baseUrl' => '@web/themes/adminlte',
+        //     ],
+        // ],
+        'assetManager' => [
+            'bundles' => [
+                'dmstr\web\AdminLteAsset' => [
+                    'skin' => 'skin-yellow',
+                ]
+            ]
+        ],
+        'notification' => [
+            'class' => 'common\components\Notifications'
+        ],
+        'urlManagerFrontend' => [
+            'class' => 'yii\web\urlManager',
+            'baseUrl' => '/',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+        ],
     ],
     'as access' => [
             'class' => 'mdm\admin\components\AccessControl',

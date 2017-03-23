@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "09eccb9bd44c8f51aba1ceaf175ae875",
+    "content-hash": "c2ce61d56fa4083ab44226469724aba5",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -2113,6 +2113,44 @@
                 "yii2"
             ],
             "time": "2016-10-13 08:36:12"
+        },
+        {
+            "name": "culture-pn-psu/yii2-visit-booking",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/culture-pn-psu/yii2-visit-booking.git",
+                "reference": "6cc4f68f44086f61423fbb57a35c2cff9e8264fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/culture-pn-psu/yii2-visit-booking/zipball/6cc4f68f44086f61423fbb57a35c2cff9e8264fa",
+                "reference": "6cc4f68f44086f61423fbb57a35c2cff9e8264fa",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "culturePnPsu\\visitBooking\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Culture Service",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Activity management system for Yii2",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-03-07 10:28:37"
         },
         {
             "name": "dixonsatit/yii2-thai-year-formatter",
@@ -8500,7 +8538,8 @@
         "culture-pn-psu/yii2-digitalmuseum": 20,
         "mdmsoft/yii2-admin": 20,
         "ics042/yii2-admin-bsb": 20,
-        "culture-pn-psu/yii2-learning-center": 20
+        "culture-pn-psu/yii2-learning-center": 20,
+        "culture-pn-psu/yii2-visit-booking": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

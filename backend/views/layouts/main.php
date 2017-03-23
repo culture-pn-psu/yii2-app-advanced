@@ -1,5 +1,4 @@
 <?php
-
 use yii\helpers\Html;
 
 /* @var $this \yii\web\View */
@@ -12,7 +11,8 @@ if (Yii::$app->controller->action->id === 'login') {
      * Instead, use the code  $this->layout = '//main-login'; in your controller.
      */
     echo $this->render(
-            'main-login', ['content' => $content]
+            'main-login',
+            ['content' => $content]
     );
 } else {
 
@@ -48,22 +48,24 @@ if (Yii::$app->controller->action->id === 'login') {
 
                 <?=
                 $this->render(
-                        'header.php', [
+                    'header.php', [
                     'directoryAsset' => $directoryAsset,
                     'asset' => $asset
-                        ]
+                     ]
                 )
                 ?>
 
                 <?=
                 $this->render(
-                        'left.php', ['directoryAsset' => $directoryAsset]
+                        'left.php', 
+                        ['directoryAsset' => $directoryAsset]
                 )
                 ?>
 
                 <?=
                 $this->render(
-                        'content.php', ['content' => $content, 'directoryAsset' => $directoryAsset]
+                        'content.php', 
+                        ['content' => $content, 'directoryAsset' => $directoryAsset]
                 )
                 ?>
 

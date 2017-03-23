@@ -1,5 +1,5 @@
 <?php
-
+use yii\helpers\Url;
 use mdm\admin\components\MenuHelper;
 use yii\bootstrap\Nav;
 
@@ -61,6 +61,22 @@ $profile = Yii::$app->user->identity->profile->resultInfo;
         $nav = new culturePnPsu\core\models\BackendNavigate();
         $nav = new common\models\Navigate();
         $menu1= $nav->menu(1);
+        $menu1[] = [
+            'label'=>"จัดการแหล่งเรียนรู้",
+            'url'=>Url::to(['/learning-center']),
+            'icon'=>'fa fa-home',
+            
+            ];
+        $menu1[] = [
+            'label'=>Yii::t('culture','Visit Bookings'),
+            'url'=>Url::to(['/visit-booking']),
+            'icon'=>'fa fa-home',
+        ];    
+            
+         
+            
+            
+        
 //        print_r($menu1);
 //        exit();
         echo dmstr\widgets\Menu::widget([
